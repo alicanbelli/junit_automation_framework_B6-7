@@ -39,7 +39,7 @@ public class FirstJUnitClass {
     }
 
 
-    @Test
+    @Test()
     public void assertion(){
         //assertTrue(TRUE)=> PASS
         //assertTrue(FALSE)=> FAIL

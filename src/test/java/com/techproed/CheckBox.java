@@ -2,6 +2,7 @@ package com.techproed;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.After;
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.By;
@@ -39,9 +40,10 @@ public class CheckBox {
         if (!checkbox2.isSelected()){
             checkbox2.click();
         }
+        //Verify checkbox1 is checked
+        Assert.assertTrue(checkbox2.isSelected());
     }
 
-    //Verify checkbox1 is checked
 
     @After
     public void tearDown(){
