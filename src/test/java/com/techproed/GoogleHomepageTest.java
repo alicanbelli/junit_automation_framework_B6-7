@@ -47,7 +47,7 @@ public class GoogleHomepageTest {
     @Test
     public void imageTest(){
         //    imageTest => Verify if google image displays or not
-        WebElement googleImage=driver.findElement(By.xpath("//img[@alt='Google']"));
+        WebElement googleImage=driver.findElement(By.xpath("//div[@id='hplogo']"));
         Assert.assertTrue(googleImage.isDisplayed());
     }
 
